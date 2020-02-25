@@ -27,9 +27,9 @@ class Scraper
   end
 
   def make_courses #operating on collection returned by get_courses
-      self.get_courses.each do |post|
-        course = Course.new
-        course.title = post.css("h2").text
+      self.get_courses.each do |post| #iterates  over courses
+        course = Course.new #makes new course class
+        course.title = post.css("h2").text #creates attributes 
         course.schedule = post.css(".date").text
         course.description = post.css("p").text
       end
