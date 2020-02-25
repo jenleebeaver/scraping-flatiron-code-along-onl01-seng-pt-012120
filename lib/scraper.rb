@@ -21,7 +21,7 @@ class Scraper
     #end
   end
 
-  def get_courses
+  def get_courses #this operates on the HTML page (the return of the #get_page)
     self.get_page.css(".post")
   end
 
