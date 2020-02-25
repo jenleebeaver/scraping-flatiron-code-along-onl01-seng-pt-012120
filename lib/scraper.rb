@@ -26,7 +26,7 @@ class Scraper
     self.get_page.css(".post")
   end
 
-  def make_courses #operating on collection returned by get_courses 
+  def make_courses #operating on collection returned by get_courses
       self.get_courses.each do |post|
         course = Course.new
         course.title = post.css("h2").text
