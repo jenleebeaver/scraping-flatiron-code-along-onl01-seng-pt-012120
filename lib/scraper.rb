@@ -7,7 +7,7 @@ class Scraper
   
   def print_courses
     self.make_courses
-    Course.all.each do |course|
+    Course.all.each do |course| #iterating over all courses
       if course.title && course.title != ""
         puts "Title: #{course.title}"
         puts "  Schedule: #{course.schedule}"
