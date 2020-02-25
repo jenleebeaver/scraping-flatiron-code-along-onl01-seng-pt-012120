@@ -22,6 +22,7 @@ class Scraper
   end
 
   def get_courses #this operates on the HTML page (the return of the #get_page)
+    #and returns the collection of Nokogiri XML elements s
     self.get_page.css(".post")
   end
 
