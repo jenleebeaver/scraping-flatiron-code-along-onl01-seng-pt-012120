@@ -8,14 +8,16 @@ require_relative './course.rb' #this allows scraper to make new courses and give
 class Scraper
 
   def get_page
-    doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+    
+    #doc = 
+    Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
 
-    doc.css(".post").each do |post|
-      course = Course.new #new instance of course
-      course.title = post.css("h2").text #giving new course title
-      course.schedule = post.css(".date").text #schedule
-      course.description = post.css("p").text #description
-      binding.pry
+    #doc.css(".post").each do |post|
+      #course = Course.new #new instance of course
+      #course.title = post.css("h2").text #giving new course title
+      #course.schedule = post.css(".date").text #schedule
+      #course.description = post.css("p").text #description
+      #binding.pry
     end
   end
 
