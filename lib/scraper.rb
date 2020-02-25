@@ -2,7 +2,8 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 
-require_relative './course.rb'
+require_relative './course.rb' #this allows scraper to make new courses and give them attributes scraped
+#from the web page 
 
 class Scraper
 
