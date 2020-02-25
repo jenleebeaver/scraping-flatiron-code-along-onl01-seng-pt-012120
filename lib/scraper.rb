@@ -21,6 +21,9 @@ class Scraper
     #end
   end
 
+  def get_courses
+  end
+
   def print_courses
     self.make_courses
     Course.all.each do |course| #iterating over all courses
